@@ -2,8 +2,8 @@
 'use client';
 
 import { ChangeEvent, useState, FormEvent } from "react";
-import { type Message, ChatLine, LoadingChatLine } from './ChatLine';
-
+import { type Message,  LoadingChatLine } from './ChatLine';
+import ChatLine from "./ChatLine"
 export const initialMessages: Message[] = [
   {
     who: 'bot',

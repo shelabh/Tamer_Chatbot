@@ -1,3 +1,6 @@
+'use client';
+import React from 'react';
+
 import clsx from 'clsx'
 import Balancer from 'react-wrap-balancer'
 
@@ -35,7 +38,7 @@ const convertNewLines = (text: string) =>
     </span>
   ))
 
-export function ChatLine({ who = 'bot', message }: Message) {
+export default function ChatLine({ who = 'bot', message }: Message) {
   if (!message) {
     return null
   }
